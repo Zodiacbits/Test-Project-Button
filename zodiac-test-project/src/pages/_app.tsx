@@ -14,11 +14,4 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     setClicked(true);
     console.log("Button clicked");
   }
-  return (
-<div>
-    {clicked ? "Ownership verified" : null}
-  </div>
-  
-);  
-  var document;
 }

@@ -13,5 +13,9 @@ export default function handler(
   res.status(200).json({ name: 'Zodiac API Endpoint' })
   } else {
     res.status(400).json({name:'Get Whitelisted, Noob!'})
+    res.status(405).json({ name: 'Method not allowed' })
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ name: 'Internal server error' });
   }
 }
