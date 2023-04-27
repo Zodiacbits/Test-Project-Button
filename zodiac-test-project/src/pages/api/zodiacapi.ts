@@ -12,6 +12,6 @@ export default function handler(
   if (req.method === 'GET') {
   res.status(200).json({ name: 'Zodiac API Endpoint' })
   } else {
-    res.status(400).json({message: 'Get Whitelisted, Noob!'})
+    res.status(400).json({name:'Get Whitelisted, Noob!'})
   }
 }
