@@ -14,8 +14,13 @@ export default function handler(
   } else {
     res.status(400).json({name:'Get Whitelisted, Noob!'})
     res.status(405).json({ name: 'Method not allowed' })
+
+  try {
   } catch (error) {
     console.error(error);
     res.status(500).json({ name: 'Internal server error' });
   }
+  } 
+
+
 }
