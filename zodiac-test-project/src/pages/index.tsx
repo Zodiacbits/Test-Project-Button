@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { getAccountPath, verifyMessage } from 'ethers'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 const element = document.getElementById("myBtn");
@@ -20,8 +22,6 @@ export default function Home() {
         <button id="myBtn">Verify Ownership</button>
         <p id="myBtn"></p>
       </div>
-      <script>
-        element.addEventListener("click", function() {document.getElementById("myBtn").innerHTML = "Ownership Verified"});
-      </script></>
+    </>
   )
 }
