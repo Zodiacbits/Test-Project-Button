@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { signMessage, verifyMessage } from "ethers"
 
 export const clicked = true;
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   
   function App() {
     const [clicked, setClicked] = useState(false);
+    const []
 
     const handleClick = () =>
     //Handle button click logic here
