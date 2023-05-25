@@ -8,12 +8,12 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />
   
   function App() {
-    const [clicked, setClicked] = useState(false);
-    const []
-
-    const handleClick = () =>
-    //Handle button click logic here
-    setClicked(true);
-    console.log("Button clicked");
-  }
+    const handleVerifyMessage = async () => {
+      const result = await verifyMessage(signedMessage, message);
+      if(result.success) {
+        setVerificationResult(result.address);
+      } else {
+        alert(result.message);
+      }
+    };
 }
