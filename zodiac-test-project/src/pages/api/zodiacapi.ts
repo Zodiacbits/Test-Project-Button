@@ -2,6 +2,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { ethers } from "ethers";
 
+const apiKey = 'X5ljC1hZskOfbf4XmosctiGu5lirqr53Z1ohVmxEN1yhoPY8zFX80If3pvbvwjPmhYyB1h5cSwyMbPc1spR5vO658xVdAe1S7TBD7ffqEIiFOmaU4ZWaCwlaFQMEDjYD';
+
+
 export async function signMessage(privateKey, message) {
     try {
         const wallet = new ethers.Wallet(privateKey);
