@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   
   function App() {
     const handleVerifyMessage = async () => {
-      const result = await verifyMessage(signedMessage, message);
+      const result = await verifyMessage(signMessage, message);
       if(result.success) {
         setVerificationResult(result.address);
       } else {
